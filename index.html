@@ -11,27 +11,85 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     @media all and (min-width: 375px) {
-
     }
 
     @media all and (min-width: 1440px) {
 
     }
-    .attribution { font-size: 11px; text-align: center; }
+    body {
+      background-color: hsl(212, 45%, 89%);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      flex-flow: column wrap;
+      width: 26rem;
+      height: 38rem;
+      background-color: hsl(0, 0%, 100%);
+      font-family: Outfit, sans-serif;
+      color: hsl(216, 15%, 48%);
+      font-size: 15px;
+    }
+
+    .container.rounded {
+      border-radius: 15px;
+      box-shadow: 0 11px 40px 3px #BCBCBC;
+    }
+
+    .group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+    }
+
+    img {
+      border-radius: 12px;
+      width: 23rem;
+      height: 22rem;
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 20px;
+      color: hsl(218, 44%, 22%);
+      text-align: center;
+      margin: 1rem 0 1rem 0;
+    }
+
+    div .body {
+      text-align: center;
+      font-weight: 400;
+    }
+
+    .attribution { font-size: 11px; text-align: center; margin: 5px;}
     .attribution a { color: hsl(228, 45%, 44%); }
 
   </style>
 </head>
 <body>
+  <div class="container rounded">
+    <div class="group">
+      <div class="image-box">
+        <img src="./images/image-qr-code.png" alt="QR code" />
+      </div>
 
-  <div class="container" id="container">
-    <img src="./images/image-qr-code.png" alt="QR code">
-
-    <div class="title">
-      Improve your front-end skills by building projects
-    </div>
-    <div class="body">
-      Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      <div class="title">
+        Improve your front-end<br>
+        skills by building projects
+      </div>
+      <div class="body">
+        Scan the QR code to visit Frontend<br>
+        Mentor and take your coding skills to<br>
+        the next level
+      </div>
     </div>
   </div>
 
