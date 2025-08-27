@@ -14,59 +14,80 @@
     }
 
     @media all and (min-width: 1440px) {
-
     }
+
     body {
       background-color: hsl(212, 45%, 89%);
-      margin: 0;
-      padding: 0;
+
+      /* Auto layout */
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
+      align-content: center;
+      flex-direction: column;
+      position: relative;
       height: 100vh;
     }
 
     .container {
-      flex-flow: column wrap;
-      width: 26rem;
-      height: 38rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-self: center;
+      width: 320px;
+      height: 499px;
       background-color: hsl(0, 0%, 100%);
-      font-family: Outfit, sans-serif;
+      font-family: 'Outfit', sans-serif;
       color: hsl(216, 15%, 48%);
-      font-size: 15px;
+      padding: 16px 16px 40px 16px;
+      gap: 24px
     }
 
     .container.rounded {
-      border-radius: 15px;
-      box-shadow: 0 11px 40px 3px #BCBCBC;
+      border-radius: 20px;
+      box-shadow: 0 25px 25px rgba(0, 0, 0, 0.0476518);
     }
 
-    .group {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 10px;
-    }
+    /*.group {*/
+    /*  flex: none;*/
+    /*  order: 0;*/
+    /*  flex-grow: 0;*/
+      /*display: flex;*/
+      /*flex-direction: column;*/
+      /*justify-content: center;*/
+      /*align-items: center;*/
+      /*row-gap: 24px*/
+      /*margin: 10px;*/
+    /*}*/
 
     img {
-      border-radius: 12px;
-      width: 23rem;
-      height: 22rem;
+      border-radius: 10px;
+      width: 100%;
+      height: 288px;
+      /*margin-top: 7px;*/
+      align-self: center;
     }
 
-    .title {
+    /* Text */
+
+    div.title {
+      letter-spacing: 0;
       font-weight: 700;
-      font-size: 20px;
+      font-size: 22px;
       color: hsl(218, 44%, 22%);
       text-align: center;
-      margin: 1rem 0 1rem 0;
+      align-self: stretch;
+      line-height: 1.2;
+      /*margin: 1rem 0 1rem 0;*/
     }
 
-    div .body {
+    div.body {
+      letter-spacing: 0;
       text-align: center;
       font-weight: 400;
+      align-self: stretch;
+      font-size: 15px;
+      line-height: 1.4;
     }
 
     .attribution { font-size: 11px; text-align: center; margin: 5px;}
@@ -76,21 +97,21 @@
 </head>
 <body>
   <div class="container rounded">
-    <div class="group">
-      <div class="image-box">
-        <img src="./images/image-qr-code.png" alt="QR code" />
-      </div>
+<!--    <div class="group">-->
+<!--    <div class="image-box">-->
+    <img src="./images/image-qr-code.png" alt="QR code" />
+<!--    </div>-->
 
-      <div class="title">
-        Improve your front-end<br>
-        skills by building projects
-      </div>
-      <div class="body">
-        Scan the QR code to visit Frontend<br>
-        Mentor and take your coding skills to<br>
-        the next level
-      </div>
+    <div class="title">
+      Improve your front-end<br>
+      skills by building projects
     </div>
+    <div class="body">
+      Scan the QR code to visit Frontend<br>
+      Mentor and take your coding skills to<br>
+      the next level
+    </div>
+<!--    </div>-->
   </div>
 
   <div class="attribution">
